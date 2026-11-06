@@ -1,0 +1,1213 @@
+{
+  "format": "sogni-world@1",
+  "id": "hollow-lane",
+  "title": "The Last House on Hollow Lane",
+  "subtitle": "Halloween night, 1985. A house where it has been the same night since 1955, a kind old woman still waiting for her son, five ways to stay forever and only one way to let the night end.",
+  "credit": "Made with Sogni",
+  "aspect": {
+    "width": 2688,
+    "height": 1536
+  },
+  "start": "lane",
+  "order": null,
+  "music": {
+    "src": "audio/music.mp3",
+    "volume": 0.45,
+    "underFilms": 0.5,
+    "credit": "Lullaby made with Sogni"
+  },
+  "intro": {
+    "eyebrow": "Halloween 1985 · 10 rooms · 6 endings",
+    "tagline": "The last house on Hollow Lane has opened its door for the first time in thirty years. Click whatever catches your eye to look closer or go on; press B to step back. Find the five keepsakes, and remember the rule of the house: take only one.",
+    "warning": "A spooky story with no blood, but a few jump scares.",
+    "begin": "Walk up the lane"
+  },
+  "places": [
+    {
+      "id": "lane",
+      "title": "Hollow Lane",
+      "chapter": "Halloween, 1985 · Hollow Falls, Massachusetts",
+      "caption": "Every porch is lit. Except one.",
+      "still": "stills/lane.webp",
+      "loop": {
+        "src": "films/lane-loop.mp4",
+        "src720": "films/lane-loop-720.mp4",
+        "seconds": 8
+      },
+      "narration": {
+        "lines": [
+          {
+            "text": "Last house on Hollow Lane. Nobody goes there."
+          },
+          {
+            "text": "A boy from that house went out trick-or-treating thirty years ago and never came home. It has been dark ever since."
+          },
+          {
+            "text": "Tonight its door is open. As if someone is expecting me."
+          }
+        ]
+      },
+      "hotspots": [
+        {
+          "id": "house",
+          "label": "Walk up to the dark house",
+          "hint": "The door is open",
+          "at": [
+            0.51,
+            0.4
+          ],
+          "outline": {
+            "width": 1536,
+            "height": 878,
+            "path": "M786 36L792 36L793 80L847 199L850 212L850 215L841 215L835 222L830 223L830 265L831 270L836 272L836 279L838 281L885 281L897 279L917 281L917 247L920 243L937 243L937 279L950 280L955 299L960 300L961 331L969 339L968 354L963 359L960 359L960 384L969 393L969 419L972 421L971 535L965 538L965 575L880 575L880 582L871 582L872 618L864 619L731 619L729 591L672 591L672 598L670 599L596 599L592 577L596 571L597 538L599 537L598 447L611 447L612 440L612 379L604 373L604 351L599 347L599 323L601 322L601 317L607 311L611 284L613 282L626 281L627 267L643 267L644 282L660 282L681 262L689 251L719 281L740 281L741 223L737 217L728 215L728 212L731 199L777 102L785 80Z"
+          },
+          "to": "porch",
+          "next": false,
+          "shortcut": false,
+          "film": {
+            "src": "films/lane-house.mp4",
+            "src720": "films/lane-house-720.mp4",
+            "seconds": 11.542
+          },
+          "rewind": {
+            "src": "films/lane-house-rewind.mp4",
+            "src720": "films/lane-house-rewind-720.mp4",
+            "seconds": 11.542
+          }
+        }
+      ]
+    },
+    {
+      "id": "porch",
+      "title": "The Porch",
+      "caption": "TAKE ONE.",
+      "still": "stills/porch.webp",
+      "loop": {
+        "src": "films/porch-loop.mp4",
+        "src720": "films/porch-loop-720.mp4",
+        "seconds": 8
+      },
+      "narration": {
+        "lines": [
+          {
+            "text": "Come in, dear. Come in out of the cold."
+          },
+          {
+            "text": "One candy each, dear. Please. The house keeps anyone who takes more."
+          }
+        ]
+      },
+      "hotspots": [
+        {
+          "id": "candy",
+          "label": "Take one candy",
+          "hint": "The card is very clear",
+          "at": [
+            0.3,
+            0.4
+          ],
+          "outline": {
+            "width": 1536,
+            "height": 878,
+            "path": "M492 421L498 424L515 423L524 429L534 432L535 435L531 447L519 464L510 466L495 465L487 461L484 446L477 441L473 431L488 427Z"
+          },
+          "to": null,
+          "collect": true,
+          "figure": {
+            "model": "figures/porch-candy.glb",
+            "icon": "figures/porch-candy.webp",
+            "name": "A 1955 candy"
+          },
+          "film": {
+            "src": "films/porch-candy.mp4",
+            "src720": "films/porch-candy-720.mp4",
+            "seconds": 6.583
+          },
+          "reveal": {
+            "still": "stills/reveals/porch-candy.webp",
+            "narration": {
+              "lines": [
+                {
+                  "text": "Just one. She'll be counting."
+                }
+              ]
+            },
+            "done": "Pocket it",
+            "back": {
+              "src": "films/porch-candy-back.mp4",
+              "src720": "films/porch-candy-back-720.mp4",
+              "seconds": 6.583
+            }
+          }
+        },
+        {
+          "id": "chair",
+          "label": "Watch the rocking chair",
+          "hint": "Nobody is sitting in it",
+          "at": [
+            0.17,
+            0.36
+          ],
+          "outline": {
+            "width": 1536,
+            "height": 878,
+            "path": "M210 339L216 344L220 355L240 350L272 350L304 358L306 348L313 346L320 364L322 386L330 406L330 424L337 455L343 457L351 456L376 442L392 437L404 437L411 440L409 445L402 449L403 469L406 479L410 483L408 496L415 521L416 534L420 540L423 552L431 559L432 563L430 566L410 575L408 578L376 588L351 585L339 578L328 575L323 570L316 570L302 581L281 591L271 593L247 591L223 575L218 566L218 559L221 558L232 564L242 574L246 571L244 568L244 558L237 542L238 519L233 503L230 480L223 470L226 457L220 435L217 406L213 396L205 348L207 341Z"
+          },
+          "to": null,
+          "film": {
+            "src": "films/porch-chair.mp4",
+            "src720": "films/porch-chair-720.mp4",
+            "seconds": 6.583
+          }
+        },
+        {
+          "id": "door",
+          "label": "Push the door open",
+          "hint": "Warm inside",
+          "at": [
+            0.5,
+            0.08
+          ],
+          "outline": {
+            "width": 1536,
+            "height": 878,
+            "path": "M856 560L684 559L694 117L867 126Z"
+          },
+          "to": "hall",
+          "next": false,
+          "shortcut": false,
+          "film": {
+            "src": "films/porch-door.mp4",
+            "src720": "films/porch-door-720.mp4",
+            "seconds": 9.44
+          },
+          "rewind": {
+            "src": "films/porch-door-rewind.mp4",
+            "src720": "films/porch-door-rewind-720.mp4",
+            "seconds": 9.44
+          }
+        }
+      ]
+    },
+    {
+      "id": "hall",
+      "title": "The Hall of Portraits",
+      "caption": "Every clock in this house says one minute to twelve.",
+      "still": "stills/hall.webp",
+      "loop": {
+        "src": "films/hall-loop.mp4",
+        "src720": "films/hall-loop-720.mp4",
+        "seconds": 8
+      },
+      "narration": {
+        "lines": [
+          {
+            "text": "They all came for the party, and the night kept them. I couldn't stop it."
+          },
+          {
+            "text": "Make yourself at home. The party starts soon."
+          }
+        ]
+      },
+      "hotspots": [
+        {
+          "id": "portraits",
+          "label": "Look at the portraits",
+          "hint": "Six children, six Halloweens",
+          "at": [
+            0.5,
+            0.07
+          ],
+          "outline": {
+            "width": 1536,
+            "height": 878,
+            "path": "M540 125L669 125L669 281L540 281ZM715 122L850 122L850 291L715 291ZM892 128L1020 128L1020 290L892 290ZM539 316L669 316L669 475L539 475ZM715 316L849 316L849 480L715 480ZM891 316L1021 316L1021 480L891 480Z"
+          },
+          "to": null,
+          "details": {
+            "title": "Halloween lore: why we dress up",
+            "text": "Two thousand years ago the Celts of Ireland and Britain kept Samhain on the night of 31 October, when they believed the dead walked close to the living. People wore disguises so wandering spirits would take them for one of their own. The masks and costumes of Halloween descend from that night.\n",
+            "facts": [
+              [
+                "Festival",
+                "Samhain, Celtic new year"
+              ],
+              [
+                "Date",
+                "31 October to 1 November"
+              ],
+              [
+                "Costumes in America",
+                "common from the 1920s"
+              ]
+            ]
+          },
+          "film": {
+            "src": "films/hall-portraits.mp4",
+            "src720": "films/hall-portraits-720.mp4",
+            "seconds": 6.583
+          },
+          "reveal": {
+            "still": "stills/reveals/hall-portraits.webp",
+            "narration": {
+              "lines": [
+                {
+                  "text": "1955. 1959. 1962. 1967. 1971. 1979. A child every few Halloweens. Every one of them took a second candy, and the night never let them go."
+                }
+              ]
+            },
+            "done": "Step back",
+            "back": {
+              "src": "films/hall-portraits-back.mp4",
+              "src720": "films/hall-portraits-back-720.mp4",
+              "seconds": 6.583
+            }
+          }
+        },
+        {
+          "id": "clock",
+          "label": "Open the clock case",
+          "hint": "Its pendulum never stops",
+          "at": [
+            0.77,
+            0.06
+          ],
+          "outline": {
+            "width": 1536,
+            "height": 878,
+            "path": "M1213 769L1100 742L1089 148L1158 88L1223 105L1255 148L1261 688L1255 755Z"
+          },
+          "to": "library",
+          "next": false,
+          "shortcut": false,
+          "film": {
+            "src": "films/hall-clock.mp4",
+            "src720": "films/hall-clock-720.mp4",
+            "seconds": 11.542
+          },
+          "rewind": {
+            "src": "films/hall-clock-rewind.mp4",
+            "src720": "films/hall-clock-rewind-720.mp4",
+            "seconds": 11.542
+          }
+        },
+        {
+          "id": "candy",
+          "label": "Take a second candy",
+          "hint": "The sign said one. She'd never miss it.",
+          "at": [
+            0.51,
+            0.52
+          ],
+          "outline": {
+            "width": 1536,
+            "height": 878,
+            "path": "M748 497L771 497L774 500L779 500L779 503L773 504L775 506L784 508L794 504L795 507L801 510L815 503L823 507L825 518L821 527L817 528L814 533L810 534L801 543L804 548L801 552L795 553L799 557L775 557L771 555L764 557L763 549L761 548L763 542L755 538L749 530L744 528L736 514L734 514L738 504Z"
+          },
+          "to": "portrait",
+          "next": false,
+          "shortcut": false,
+          "film": {
+            "src": "films/hall-candy.mp4",
+            "src720": "films/hall-candy-720.mp4",
+            "seconds": 8
+          },
+          "rewind": {
+            "src": "films/hall-candy-rewind.mp4",
+            "src720": "films/hall-candy-rewind-720.mp4",
+            "seconds": 8
+          }
+        },
+        {
+          "id": "door",
+          "label": "Open the parlour door",
+          "hint": "Music behind it",
+          "at": [
+            0.93,
+            0.1
+          ],
+          "outline": {
+            "width": 1536,
+            "height": 878,
+            "path": "M1535 877L1411 839L1395 80L1467 0L1535 0Z"
+          },
+          "to": "parlour",
+          "next": false,
+          "shortcut": false,
+          "film": {
+            "src": "films/hall-door.mp4",
+            "src720": "films/hall-door-720.mp4",
+            "seconds": 9.44
+          },
+          "rewind": {
+            "src": "films/hall-door-rewind.mp4",
+            "src720": "films/hall-door-rewind-720.mp4",
+            "seconds": 9.44
+          }
+        },
+        {
+          "id": "stairs",
+          "label": "Climb the stairs",
+          "hint": "A child's room is upstairs",
+          "at": [
+            0.17,
+            0.2
+          ],
+          "outline": {
+            "width": 1536,
+            "height": 878,
+            "path": "M146 851L126 764L123 507L163 339L237 248L392 147L446 433L451 797L344 855Z"
+          },
+          "to": "nursery",
+          "next": false,
+          "shortcut": false,
+          "film": {
+            "src": "films/hall-stairs.mp4",
+            "src720": "films/hall-stairs-720.mp4",
+            "seconds": 11.542
+          },
+          "rewind": {
+            "src": "films/hall-stairs-rewind.mp4",
+            "src720": "films/hall-stairs-rewind-720.mp4",
+            "seconds": 11.542
+          }
+        },
+        {
+          "id": "sconce",
+          "label": "Look at the candle",
+          "hint": "The flame leans toward the stairs",
+          "at": [
+            0.07,
+            0.14
+          ],
+          "outline": {
+            "width": 1536,
+            "height": 878,
+            "path": "M122 143L129 159L140 234L118 261L66 293L55 260L61 205Z"
+          },
+          "to": null,
+          "film": {
+            "src": "films/hall-sconce.mp4",
+            "src720": "films/hall-sconce-720.mp4",
+            "seconds": 6.583
+          }
+        }
+      ]
+    },
+    {
+      "id": "parlour",
+      "title": "The Party",
+      "caption": "A table laid for one guest.",
+      "still": "stills/parlour.webp",
+      "loop": {
+        "src": "films/parlour-loop.mp4",
+        "src720": "films/parlour-loop-720.mp4",
+        "seconds": 8
+      },
+      "narration": {
+        "lines": [
+          {
+            "text": "There you are. I made his favourite cake."
+          },
+          {
+            "text": "Sit down, dear. That chair has been waiting for thirty years."
+          }
+        ]
+      },
+      "hotspots": [
+        {
+          "id": "whitlock",
+          "label": "Talk to Mrs. Whitlock",
+          "hint": "She has been waiting",
+          "at": [
+            0.63,
+            0.06
+          ],
+          "outline": {
+            "width": 1536,
+            "height": 878,
+            "path": "M960 80L988 83L1002 92L1010 102L1020 123L1022 149L1017 162L1010 169L1006 178L999 183L997 192L1000 198L1006 202L1019 205L1025 210L1036 213L1057 227L1069 266L1068 272L1074 306L1074 329L1072 336L1074 354L1071 368L1066 373L1064 386L1055 394L1047 412L1047 423L1053 440L1052 446L1058 461L1059 478L1057 484L1059 485L1059 496L1062 500L1064 511L1063 531L1066 544L1066 563L1064 566L1069 580L1070 610L1068 623L1070 636L1067 643L1070 649L1068 655L1071 662L1064 668L1054 669L1049 680L1016 679L1016 688L1007 705L1000 736L1001 765L999 767L1001 768L1000 776L1004 781L1002 787L1004 799L996 803L996 807L981 813L973 813L964 807L961 800L961 791L965 788L966 778L964 777L957 777L955 782L947 784L940 789L929 791L921 796L904 796L897 793L896 783L898 778L917 763L935 742L937 737L935 711L926 674L914 673L911 671L910 666L894 663L890 658L889 652L873 649L867 644L879 520L881 517L882 501L887 496L887 488L892 481L887 478L886 467L892 458L893 439L897 435L894 421L888 421L881 415L875 389L876 385L871 370L871 338L876 326L879 304L887 276L888 260L896 234L907 223L946 206L946 200L937 191L931 168L925 160L925 150L920 142L920 108L937 89L948 83Z"
+          },
+          "to": null,
+          "film": {
+            "src": "films/parlour-whitlock.mp4",
+            "src720": "films/parlour-whitlock-720.mp4",
+            "seconds": 6.583
+          },
+          "reveal": {
+            "still": "stills/reveals/parlour-whitlock.webp",
+            "narration": {
+              "lines": [
+                {
+                  "text": "My Tommy. He went out trick-or-treating in 1955 and never came home. I keep his party ready."
+                }
+              ]
+            },
+            "done": "Step back",
+            "back": {
+              "src": "films/parlour-whitlock-back.mp4",
+              "src720": "films/parlour-whitlock-back-720.mp4",
+              "seconds": 6.583
+            }
+          }
+        },
+        {
+          "id": "chair",
+          "label": "Sit at the table",
+          "hint": "The cake is still warm. So is the chair.",
+          "at": [
+            0.47,
+            0.42
+          ],
+          "outline": {
+            "width": 1536,
+            "height": 878,
+            "path": "M801 423L810 423L822 427L825 430L825 444L816 458L816 463L818 464L816 479L804 532L804 545L796 570L793 592L784 627L785 651L782 665L778 671L778 680L783 701L791 719L807 795L803 802L796 801L780 748L775 741L752 740L748 738L744 742L755 794L753 797L754 820L752 825L755 830L753 836L755 836L757 841L759 858L753 858L751 856L753 851L752 848L748 847L747 834L743 830L739 816L740 812L738 811L735 791L733 789L730 756L726 747L726 741L723 736L718 734L700 733L690 728L696 723L714 728L722 725L721 706L718 697L677 695L653 688L650 678L650 661L653 654L658 651L663 638L666 637L667 630L676 624L674 620L682 604L685 601L697 599L701 596L701 580L703 583L708 583L703 588L708 589L706 594L712 599L721 599L729 602L743 602L745 600L753 566L753 554L762 510L750 504L741 489L744 487L744 482L750 472L758 464L777 459L786 454L790 448L796 428Z"
+          },
+          "to": "guest",
+          "next": false,
+          "shortcut": false,
+          "film": {
+            "src": "films/parlour-chair.mp4",
+            "src720": "films/parlour-chair-720.mp4",
+            "seconds": 9.417
+          },
+          "rewind": {
+            "src": "films/parlour-chair-rewind.mp4",
+            "src720": "films/parlour-chair-rewind-720.mp4",
+            "seconds": 9.417
+          }
+        },
+        {
+          "id": "apples",
+          "label": "Bob for an apple",
+          "hint": "An old party game",
+          "at": [
+            0.75,
+            0.58
+          ],
+          "outline": {
+            "width": 1536,
+            "height": 878,
+            "path": "M1227 709L1083 696L1074 634L1086 623L1132 611L1234 614L1241 655Z"
+          },
+          "to": null,
+          "collect": true,
+          "figure": {
+            "model": "figures/parlour-apples.glb",
+            "icon": "figures/parlour-apples.webp",
+            "name": "A red bobbing apple"
+          },
+          "details": {
+            "title": "Halloween lore: bobbing for apples",
+            "text": "Apple bobbing goes back to the Roman harvest festival of Pomona, goddess of fruit, and to old British courting games: the first to bite an apple without using their hands was said to be the next to marry.\n",
+            "facts": [
+              [
+                "Also called",
+                "apple ducking"
+              ],
+              [
+                "Rule",
+                "no hands"
+              ]
+            ]
+          },
+          "film": {
+            "src": "films/parlour-apples.mp4",
+            "src720": "films/parlour-apples-720.mp4",
+            "seconds": 6.583
+          },
+          "reveal": {
+            "still": "stills/reveals/parlour-apples.webp",
+            "narration": {
+              "lines": [
+                {
+                  "text": "Bobbing for apples. The first to bite one would be the first to marry. Tommy never got to try."
+                }
+              ]
+            },
+            "done": "Take the apple",
+            "back": {
+              "src": "films/parlour-apples-back.mp4",
+              "src720": "films/parlour-apples-back-720.mp4",
+              "seconds": 6.583
+            }
+          }
+        },
+        {
+          "id": "door",
+          "label": "Go to the kitchen",
+          "hint": "The door behind Mrs. Whitlock",
+          "at": [
+            0.7,
+            0.04
+          ],
+          "outline": {
+            "width": 1536,
+            "height": 878,
+            "path": "M1021 98L1138 105L1133 309L1116 369L1074 403L1010 196Z"
+          },
+          "to": "kitchen",
+          "next": false,
+          "shortcut": false,
+          "film": {
+            "src": "films/parlour-door.mp4",
+            "src720": "films/parlour-door-720.mp4",
+            "seconds": 9.417
+          },
+          "rewind": {
+            "src": "films/parlour-door-rewind.mp4",
+            "src720": "films/parlour-door-rewind-720.mp4",
+            "seconds": 9.417
+          }
+        },
+        {
+          "id": "gramophone",
+          "label": "Play the record",
+          "hint": "It is still wound",
+          "at": [
+            0.77,
+            0.15
+          ],
+          "outline": {
+            "width": 1536,
+            "height": 878,
+            "path": "M1225 181L1260 224L1245 435L1234 459L1142 473L1090 436L1080 379L1159 202L1178 186Z"
+          },
+          "to": null,
+          "film": {
+            "src": "films/parlour-gramophone.mp4",
+            "src720": "films/parlour-gramophone-720.mp4",
+            "seconds": 6.583
+          }
+        }
+      ]
+    },
+    {
+      "id": "kitchen",
+      "title": "The Kitchen",
+      "caption": "Candy that never stops boiling.",
+      "still": "stills/kitchen.webp",
+      "loop": {
+        "src": "films/kitchen-loop.mp4",
+        "src720": "films/kitchen-loop-720.mp4",
+        "seconds": 8
+      },
+      "narration": {
+        "lines": [
+          {
+            "text": "It smells like every Halloween at once."
+          },
+          {
+            "text": "The back door leads out to the garden. There are cellar doors out there."
+          }
+        ]
+      },
+      "hotspots": [
+        {
+          "id": "apple",
+          "label": "Pick up a caramel apple",
+          "hint": "Still warm",
+          "at": [
+            0.25,
+            0.66
+          ],
+          "outline": {
+            "width": 1536,
+            "height": 878,
+            "path": "M387 699L395 704L403 703L403 706L407 708L419 710L429 716L437 725L449 746L449 780L441 801L433 809L431 823L403 835L371 837L348 827L332 809L324 794L320 769L324 747L333 730L343 720L354 714L382 708Z"
+          },
+          "to": null,
+          "collect": true,
+          "figure": {
+            "model": "figures/kitchen-apple.glb",
+            "icon": "figures/kitchen-apple.webp",
+            "name": "A caramel apple"
+          },
+          "film": {
+            "src": "films/kitchen-apple.mp4",
+            "src720": "films/kitchen-apple-720.mp4",
+            "seconds": 6.583
+          },
+          "reveal": {
+            "still": "stills/reveals/kitchen-apple.webp",
+            "narration": {
+              "lines": [
+                {
+                  "text": "Still warm. Someone made these tonight. And every night."
+                }
+              ]
+            },
+            "done": "Take it with you",
+            "back": {
+              "src": "films/kitchen-apple-back.mp4",
+              "src720": "films/kitchen-apple-back-720.mp4",
+              "seconds": 6.583
+            }
+          }
+        },
+        {
+          "id": "door",
+          "label": "Go out the back door",
+          "hint": "Out to the garden and down to the cellar",
+          "at": [
+            0.46,
+            0.12
+          ],
+          "outline": {
+            "width": 1536,
+            "height": 878,
+            "path": "M890 150L893 596L674 554L498 452L487 191L621 133Z"
+          },
+          "to": "cellar",
+          "next": false,
+          "shortcut": false,
+          "film": {
+            "src": "films/kitchen-door.mp4",
+            "src720": "films/kitchen-door-720.mp4",
+            "seconds": 14.375
+          },
+          "rewind": {
+            "src": "films/kitchen-door-rewind.mp4",
+            "src720": "films/kitchen-door-rewind-720.mp4",
+            "seconds": 14.375
+          }
+        },
+        {
+          "id": "window",
+          "label": "Look out the window",
+          "hint": "Someone is in the garden",
+          "at": [
+            0.84,
+            0.03
+          ],
+          "outline": {
+            "width": 1536,
+            "height": 878,
+            "path": "M1400 390L1206 363L1202 97L1416 38Z"
+          },
+          "to": null,
+          "film": {
+            "src": "films/kitchen-window.mp4",
+            "src720": "films/kitchen-window-720.mp4",
+            "seconds": 6.583
+          }
+        }
+      ]
+    },
+    {
+      "id": "library",
+      "title": "The Library",
+      "caption": "Her diary lies open.",
+      "still": "stills/library.webp",
+      "loop": {
+        "src": "films/library-loop.mp4",
+        "src720": "films/library-loop-720.mp4",
+        "seconds": 8
+      },
+      "narration": {
+        "lines": [
+          {
+            "text": "Her diary. The ink is still wet."
+          }
+        ]
+      },
+      "hotspots": [
+        {
+          "id": "diary",
+          "label": "Read the diary",
+          "hint": "The last entry",
+          "at": [
+            0.51,
+            0.53
+          ],
+          "outline": {
+            "width": 1536,
+            "height": 878,
+            "path": "M763 512L778 513L791 519L829 512L860 518L887 519L912 539L913 543L916 544L919 551L932 567L927 570L881 570L846 567L794 570L738 567L687 572L658 571L657 566L671 543L683 527L695 520L731 518Z"
+          },
+          "to": null,
+          "details": {
+            "title": "Her diary: the last pages",
+            "text": "\"Tommy went out at seven in his cowboy hat and never came back. They searched the woods and the river all night. I lit the first pumpkin of the evening for him and swore it would burn until he came home. My grandmother used to say the dead come home at midnight on All Hallows' Eve. So I wait for midnight. But the clock never reaches it now, and he never comes.\" She is not a monster. She is a mother keeping a promise, and her candle holds the night one minute short of the hour when her son could come home.\n",
+            "facts": [
+              [
+                "Tommy Whitlock",
+                "8, lost on 31 October 1955"
+              ],
+              [
+                "The first pumpkin",
+                "lit for him that night, still burning"
+              ],
+              [
+                "The old belief",
+                "the dead come home at midnight on Halloween"
+              ],
+              [
+                "The clock",
+                "always one minute to twelve"
+              ]
+            ]
+          },
+          "film": {
+            "src": "films/library-diary.mp4",
+            "src720": "films/library-diary-720.mp4",
+            "seconds": 6.583
+          },
+          "reveal": {
+            "still": "stills/reveals/library-diary.webp",
+            "narration": {
+              "lines": [
+                {
+                  "text": "October 31st, 1955. I lit his pumpkin. It will burn until he comes home. It will always be tonight."
+                }
+              ]
+            },
+            "done": "Close the diary",
+            "back": {
+              "src": "films/library-diary-back.mp4",
+              "src720": "films/library-diary-back-720.mp4",
+              "seconds": 6.583
+            }
+          }
+        },
+        {
+          "id": "photo",
+          "label": "Look at the photograph",
+          "hint": "A boy in a cowboy hat",
+          "at": [
+            0.62,
+            0.4
+          ],
+          "outline": {
+            "width": 1536,
+            "height": 878,
+            "path": "M928 417L996 417L1014 418L1020 422L1022 435L1015 446L1015 453L1018 459L1016 464L1018 467L1017 493L1014 495L1015 499L1013 502L1009 504L1012 507L1011 514L1009 515L1010 528L1009 532L1005 532L1004 536L983 536L978 539L968 535L953 534L944 538L936 547L928 547L919 545L907 532L907 516L910 509L914 475L918 466L922 431L925 419Z"
+          },
+          "to": null,
+          "film": {
+            "src": "films/library-photo.mp4",
+            "src720": "films/library-photo-720.mp4",
+            "seconds": 6.583
+          },
+          "reveal": {
+            "still": "stills/reveals/library-photo.webp",
+            "narration": {
+              "lines": [
+                {
+                  "text": "Tommy Whitlock, eight years old. The same cowboy costume hangs in the attic."
+                }
+              ]
+            },
+            "done": "Put it down",
+            "back": {
+              "src": "films/library-photo-back.mp4",
+              "src720": "films/library-photo-back-720.mp4",
+              "seconds": 6.583
+            }
+          }
+        },
+        {
+          "id": "shelf",
+          "label": "Pull the bookshelf",
+          "hint": "Cold air seeps from behind the books",
+          "at": [
+            0.14,
+            0.05
+          ],
+          "outline": {
+            "width": 1536,
+            "height": 878,
+            "path": "M161 66L270 83L270 689L161 729Z"
+          },
+          "to": "attic",
+          "next": false,
+          "shortcut": false,
+          "film": {
+            "src": "films/library-shelf.mp4",
+            "src720": "films/library-shelf-720.mp4",
+            "seconds": 14.452
+          },
+          "rewind": {
+            "src": "films/library-shelf-rewind.mp4",
+            "src720": "films/library-shelf-rewind-720.mp4",
+            "seconds": 14.452
+          }
+        },
+        {
+          "id": "lamp",
+          "label": "Watch the lamp",
+          "hint": "It flickers when you look away",
+          "at": [
+            0.44,
+            0.28
+          ],
+          "outline": {
+            "width": 1536,
+            "height": 878,
+            "path": "M658 330L707 333L722 338L729 343L740 358L746 377L744 381L735 383L698 383L686 390L680 391L670 390L661 392L650 385L640 385L633 388L632 392L637 408L643 414L653 416L652 428L659 439L659 489L661 492L662 509L673 522L680 526L681 531L671 540L670 545L664 552L617 551L609 549L606 545L611 533L613 513L618 512L621 517L624 517L625 513L633 514L637 512L641 505L639 463L643 436L632 426L626 416L620 394L622 386L620 377L609 365L608 361L610 357L622 355L628 344L637 336Z"
+          },
+          "to": null,
+          "film": {
+            "src": "films/library-lamp.mp4",
+            "src720": "films/library-lamp-720.mp4",
+            "seconds": 8
+          }
+        }
+      ]
+    },
+    {
+      "id": "nursery",
+      "title": "Tommy's Room",
+      "caption": "Nothing has been moved since 1955.",
+      "still": "stills/nursery.webp",
+      "loop": {
+        "src": "films/nursery-loop.mp4",
+        "src720": "films/nursery-loop-720.mp4",
+        "seconds": 8
+      },
+      "narration": {
+        "lines": [
+          {
+            "text": "Don't touch his things, dear. He'll want them when he comes home."
+          }
+        ]
+      },
+      "hotspots": [
+        {
+          "id": "pumpkin",
+          "label": "Pick up the toy pumpkin",
+          "hint": "Carved by hand",
+          "at": [
+            0.38,
+            0.4
+          ],
+          "outline": {
+            "width": 1536,
+            "height": 878,
+            "path": "M582 433L592 434L595 438L595 445L599 448L617 448L627 452L638 464L644 479L644 499L639 514L633 523L626 526L605 525L588 529L568 529L547 526L539 521L536 511L535 484L540 469L545 461L556 452L579 447L579 437Z"
+          },
+          "to": null,
+          "collect": true,
+          "figure": {
+            "model": "figures/nursery-pumpkin.glb",
+            "icon": "figures/nursery-pumpkin.webp",
+            "name": "Tommy's toy pumpkin"
+          },
+          "film": {
+            "src": "films/nursery-pumpkin.mp4",
+            "src720": "films/nursery-pumpkin-720.mp4",
+            "seconds": 6.583
+          },
+          "reveal": {
+            "still": "stills/reveals/nursery-pumpkin.webp",
+            "narration": {
+              "lines": [
+                {
+                  "text": "Tommy carved this one himself. The real one burns somewhere below."
+                }
+              ]
+            },
+            "done": "Keep it",
+            "back": {
+              "src": "films/nursery-pumpkin-back.mp4",
+              "src720": "films/nursery-pumpkin-back-720.mp4",
+              "seconds": 6.583
+            }
+          }
+        },
+        {
+          "id": "horse",
+          "label": "Rock the rocking horse",
+          "hint": "Somebody rides it at night",
+          "at": [
+            0.84,
+            0.5
+          ],
+          "outline": {
+            "width": 1536,
+            "height": 878,
+            "path": "M1211 505L1228 507L1235 510L1246 520L1263 543L1273 577L1275 578L1276 604L1280 618L1280 623L1274 631L1277 648L1315 656L1324 661L1374 665L1380 670L1382 676L1390 680L1400 693L1406 712L1408 735L1417 751L1407 778L1397 785L1397 793L1404 816L1406 817L1405 822L1408 830L1412 833L1421 833L1426 829L1479 828L1487 834L1488 845L1485 850L1447 854L1444 855L1444 859L1437 857L1428 862L1425 859L1415 857L1414 868L1405 876L1374 871L1354 876L1337 873L1322 876L1295 875L1282 872L1268 863L1239 857L1213 845L1188 840L1179 836L1137 801L1116 774L1104 765L1101 761L1103 753L1110 748L1119 748L1129 757L1133 768L1138 773L1160 773L1169 755L1169 751L1174 746L1184 723L1202 694L1198 678L1199 666L1197 661L1201 652L1207 648L1207 632L1214 615L1215 594L1214 589L1211 588L1214 583L1208 583L1198 589L1188 588L1174 591L1170 582L1170 570L1173 569L1172 562L1174 557L1191 542L1206 524L1205 510ZM1240 704L1229 707L1218 715L1218 718L1207 733L1204 744L1223 761L1238 763L1238 767L1243 770L1244 775L1250 778L1250 780L1243 786L1234 785L1231 792L1222 787L1210 789L1209 793L1202 791L1203 794L1185 800L1185 809L1207 818L1211 823L1221 828L1253 840L1276 844L1291 853L1342 849L1343 844L1341 842L1326 837L1303 834L1291 820L1266 815L1232 794L1234 792L1247 792L1244 789L1246 786L1258 787L1265 790L1270 796L1274 796L1276 799L1302 812L1307 817L1321 818L1329 822L1338 821L1335 792L1330 776L1331 772L1329 771L1329 763L1323 746L1321 729L1316 721L1307 715L1278 711L1265 705L1252 705L1248 707Z"
+          },
+          "to": null,
+          "film": {
+            "src": "films/nursery-horse.mp4",
+            "src720": "films/nursery-horse-720.mp4",
+            "seconds": 6.583
+          }
+        },
+        {
+          "id": "mirror",
+          "label": "Touch your reflection",
+          "hint": "Your reflection raises its hand first",
+          "at": [
+            0.71,
+            0.05
+          ],
+          "outline": {
+            "width": 1536,
+            "height": 878,
+            "path": "M1150 77L1219 121L1220 317L1202 635L1192 702L1171 745L1095 757L946 715L1004 137L1042 102L1106 67Z"
+          },
+          "to": "mirror",
+          "next": false,
+          "shortcut": false,
+          "film": {
+            "src": "films/nursery-mirror.mp4",
+            "src720": "films/nursery-mirror-720.mp4",
+            "seconds": 8
+          },
+          "rewind": {
+            "src": "films/nursery-mirror-rewind.mp4",
+            "src720": "films/nursery-mirror-rewind-720.mp4",
+            "seconds": 8
+          }
+        }
+      ]
+    },
+    {
+      "id": "attic",
+      "title": "The Attic",
+      "caption": "A costume for every Halloween.",
+      "still": "stills/attic.webp",
+      "loop": {
+        "src": "films/attic-loop.mp4",
+        "src720": "films/attic-loop-720.mp4",
+        "seconds": 8
+      },
+      "narration": {
+        "lines": [
+          {
+            "text": "Their costumes, kept clean and pressed. Don't try them on, dear. Those children tried theirs on."
+          }
+        ]
+      },
+      "hotspots": [
+        {
+          "id": "cowboy",
+          "label": "Try on the cowboy costume",
+          "hint": "The hat has been waiting for a head",
+          "at": [
+            0.27,
+            0.36
+          ],
+          "outline": {
+            "width": 1536,
+            "height": 878,
+            "path": "M422 386L434 387L444 403L462 405L468 410L468 418L464 424L456 431L443 436L441 444L438 446L438 454L443 459L456 463L462 469L464 481L467 484L473 519L478 529L479 542L473 554L471 572L468 576L461 574L458 579L453 604L454 630L452 647L454 655L449 685L462 699L462 706L447 708L431 703L428 700L427 689L429 686L431 646L430 635L425 630L426 620L424 618L422 626L424 630L417 646L418 685L414 703L407 710L390 710L388 702L396 691L394 677L397 655L395 637L397 625L395 591L397 586L394 582L385 581L381 576L377 556L371 551L370 537L388 469L391 464L408 459L413 449L409 438L393 435L386 431L380 423L380 416L386 407L407 404L411 391Z"
+          },
+          "to": "mannequin",
+          "next": false,
+          "shortcut": false,
+          "film": {
+            "src": "films/attic-cowboy.mp4",
+            "src720": "films/attic-cowboy-720.mp4",
+            "seconds": 9.417
+          },
+          "rewind": {
+            "src": "films/attic-cowboy-rewind.mp4",
+            "src720": "films/attic-cowboy-rewind-720.mp4",
+            "seconds": 9.417
+          }
+        },
+        {
+          "id": "lantern",
+          "label": "Pick up the lantern",
+          "hint": "Someone keeps it lit",
+          "at": [
+            0.74,
+            0.63
+          ],
+          "outline": {
+            "width": 1536,
+            "height": 878,
+            "path": "M1141 636L1145 636L1153 642L1156 653L1166 660L1168 666L1166 677L1167 689L1170 695L1171 716L1174 724L1164 739L1166 749L1170 754L1166 758L1125 758L1114 753L1119 737L1117 730L1112 725L1114 711L1114 702L1112 700L1114 689L1112 687L1116 684L1118 676L1116 666L1119 656L1127 651L1129 641L1132 638Z"
+          },
+          "to": null,
+          "collect": true,
+          "figure": {
+            "model": "figures/attic-lantern.glb",
+            "icon": "figures/attic-lantern.webp",
+            "name": "The attic lantern"
+          },
+          "film": {
+            "src": "films/attic-lantern.mp4",
+            "src720": "films/attic-lantern-720.mp4",
+            "seconds": 6.583
+          },
+          "reveal": {
+            "still": "stills/reveals/attic-lantern.webp",
+            "narration": {
+              "lines": [
+                {
+                  "text": "Every light in this house was lit for him. But only one of them was lit by her."
+                }
+              ]
+            },
+            "done": "Take the lantern",
+            "back": {
+              "src": "films/attic-lantern-back.mp4",
+              "src720": "films/attic-lantern-back-720.mp4",
+              "seconds": 6.583
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "cellar",
+      "title": "The First Pumpkin",
+      "caption": "Lit on October 31st, 1955.",
+      "still": "stills/cellar.webp",
+      "loop": {
+        "src": "films/cellar-loop.mp4",
+        "src720": "films/cellar-loop-720.mp4",
+        "seconds": 8
+      },
+      "narration": {
+        "lines": [
+          {
+            "text": "That one has been burning since 1955."
+          },
+          {
+            "text": "Don't touch it, dear. It isn't yours to put out."
+          }
+        ]
+      },
+      "hotspots": [
+        {
+          "id": "stairs",
+          "label": "Listen to the stairs",
+          "hint": "Someone is coming down",
+          "at": [
+            0.36,
+            0.1
+          ],
+          "outline": {
+            "width": 1536,
+            "height": 878,
+            "path": "M681 153L696 260L675 486L626 513L486 501L466 483L498 154Z"
+          },
+          "to": null,
+          "film": {
+            "src": "films/cellar-stairs.mp4",
+            "src720": "films/cellar-stairs-720.mp4",
+            "seconds": 8
+          },
+          "reveal": {
+            "still": "stills/reveals/cellar-stairs.webp",
+            "narration": {
+              "lines": [
+                {
+                  "text": "Please, dear. He isn't home yet. When that light goes out, I'll have to stop waiting for him."
+                }
+              ]
+            },
+            "done": "Step back",
+            "back": {
+              "src": "films/cellar-stairs-back.mp4",
+              "src720": "films/cellar-stairs-back-720.mp4",
+              "seconds": 8
+            }
+          }
+        },
+        {
+          "id": "pumpkin",
+          "label": "Blow out the first pumpkin",
+          "hint": "Let the night end",
+          "at": [
+            0.5,
+            0.24
+          ],
+          "outline": {
+            "width": 1536,
+            "height": 878,
+            "path": "M767 305L777 305L781 309L785 335L791 343L822 348L837 356L845 364L844 370L833 374L839 378L844 387L850 392L862 416L865 437L862 465L855 482L846 490L842 497L819 511L782 515L719 513L696 500L694 495L682 483L672 457L671 437L673 425L685 395L704 374L694 368L696 362L706 354L720 348L752 343L757 336L757 309Z"
+          },
+          "to": "dawn",
+          "next": false,
+          "shortcut": false,
+          "film": {
+            "src": "films/cellar-pumpkin.mp4",
+            "src720": "films/cellar-pumpkin-720.mp4",
+            "seconds": 10.125
+          },
+          "rewind": {
+            "src": "films/cellar-pumpkin-rewind.mp4",
+            "src720": "films/cellar-pumpkin-rewind-720.mp4",
+            "seconds": 10.125
+          }
+        }
+      ]
+    },
+    {
+      "id": "dawn",
+      "title": "Midnight at Last",
+      "still": "stills/dawn.webp",
+      "loop": {
+        "src": "films/dawn-loop.mp4",
+        "src720": "films/dawn-loop-720.mp4",
+        "seconds": 8
+      },
+      "narration": null,
+      "ending": {
+        "kind": "end",
+        "title": "The Night Ends",
+        "text": "The candle went out, and for the first time in thirty years the clock struck twelve. On All Hallows' Eve the dead come home at midnight, and Mrs. Whitlock's promise had held the night one minute short of it. She was never the villain of this house, only a mother who could not stop waiting. Tommy came down the steps in his cowboy hat and took her hand, and then the light grew until they were gone. For the first time since 1955 it is morning in the house on Hollow Lane. Nobody on the street will ever believe you. But you know Tommy finally got home.\n"
+      },
+      "hotspots": []
+    },
+    {
+      "id": "portrait",
+      "title": "The Newest Portrait",
+      "still": "stills/portrait.webp",
+      "loop": null,
+      "narration": null,
+      "ending": {
+        "kind": "death",
+        "title": "Forever Guest",
+        "text": "One candy each, the sign said, and you took a second. The candles guttered, the paint in the newest frame ran and swirled, and when it dried it was you looking out, bedsheet, pail and all. Now you hang in the hall with the others, and every few years a new child stops to look at you. The portraits will keep you company for as long as the first pumpkin burns.\n"
+      },
+      "hotspots": []
+    },
+    {
+      "id": "mirror",
+      "title": "Through the Glass",
+      "still": "stills/mirror.webp",
+      "loop": null,
+      "narration": null,
+      "ending": {
+        "kind": "death",
+        "title": "The Other Side of the Glass",
+        "text": "Your reflection took your hand, and then your place. It walked out of the house on your feet at dawn. You are still in the mirror in Tommy's room, waving to anyone who comes in. In the glass it is always the same night, and somewhere below the house the first pumpkin keeps it that way.\n"
+      },
+      "hotspots": []
+    },
+    {
+      "id": "mannequin",
+      "title": "Dressed for the Party",
+      "still": "stills/mannequin.webp",
+      "loop": null,
+      "narration": null,
+      "ending": {
+        "kind": "death",
+        "title": "Dressed for the Party",
+        "text": "It fit perfectly. That was the trouble. Now you stand in the attic with the others, in a clean white sheet, ready for a party that starts at midnight and never begins. The attic is cold, but somewhere beneath the house one old candle keeps this night from ending.\n"
+      },
+      "hotspots": []
+    },
+    {
+      "id": "guest",
+      "title": "Guest of Honour",
+      "still": "stills/guest.webp",
+      "loop": null,
+      "narration": null,
+      "ending": {
+        "kind": "death",
+        "title": "Guest of Honour",
+        "text": "You sat down, and the party began. The cake never runs out, the record never ends, and the clock never quite strikes twelve. Mrs. Whitlock finally has someone to celebrate with. As long as the first pumpkin burns downstairs, it will always be tonight.\n"
+      },
+      "hotspots": []
+    }
+  ]
+}
